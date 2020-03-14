@@ -45,23 +45,16 @@ def find_greater_pair(src)
 def total_even_pairs(src)
 
   total = 0
-  row_index = 0
-  while row_index < src.count do
-    element_index = 0
-    while element_index < src[row_index].count do
-      binding.pry 
-      if src[row_index][element_index] % 2 == 0
+  i = 0
+  while i < src.count do
+      binding.pry
+      if src[i][0] % 2 == 0 && src[i][1] % 2 == 0
         #element_index += 1
-        #src[row_index][element_index]
-        total += src[row_index][element_index]
-        row_index += 1
-      else
-        src [row_index][element_index] % 2 == 1
-        row_index += 1
+        #src[row_index][element_index] % 2 == 0
+        total += src[i][0] + src[i][1]
+        i += 1
       end
-      element_index += 1
-    end
-    row_index += 1
+    i += 1
   end
   total
 end
