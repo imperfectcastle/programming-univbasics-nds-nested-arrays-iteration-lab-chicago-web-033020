@@ -42,7 +42,16 @@ def find_greater_pair(src)
 
 def total_even_pairs(src)
 
-
+  total = 0
+  row_index = 0
+  while row_index < src.count do
+    element_index = 0
+    while element_index < guessing_game_grid[row_index].count do
+      total += src[row_index][element_index]
+      element_index += 1
+    end
+    row_index += 1
+  end
 
 
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
