@@ -50,9 +50,8 @@ def total_even_pairs(src)
       if src[row_index][element_index] % 2 == 0
         total += src[row_index][element_index]
       element_index += 1
-    else src[row_index][element_index] % 2 == 1
+    end
       element_index += 1
-
     end
     row_index += 1
   end
