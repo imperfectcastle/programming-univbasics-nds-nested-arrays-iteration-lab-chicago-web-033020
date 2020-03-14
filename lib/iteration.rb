@@ -44,19 +44,16 @@ def total_even_pairs(src)
 
   total = 0
   row_index = 0
-  while row_index < src.length do
-    if src[row_index][0] % 2 == 1
-      row_index += 1
-    elsif src[row_index][0] % 2 == 0
-      src[row_index][1] % 2 == 1
-      row_index += 1
-    else src[row_index][0] % 2 == 0
-      src[row_index][1] % 2 == 0
-      total += src[row_index][0] + src[row_index][1]
+  while row_index < src.count do
+    element_index = 0
+    while element_index < src[row_index].count do
+      if src[row_index][element_index] % 2 = 0
+      element_index += 1
     end
     row_index += 1
   end
   total
+  
 end
 
 
@@ -69,17 +66,12 @@ end
   # this!
   total = 0
   row_index = 0
-
-  while row_index < src.length do
+  while row_index < src.count do
     element_index = 0
-    while element_index < src[row_index].length do
-      if src[row_index][element_index] % 2 == 0
-        total += src[row_index][element_index]
-      end
+    while element_index < src[row_index].count do
+      if src[row_index][element_index] % 2 = 0
       element_index += 1
     end
     row_index += 1
   end
   total
-
-end
