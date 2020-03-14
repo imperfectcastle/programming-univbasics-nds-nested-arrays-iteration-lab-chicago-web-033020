@@ -52,7 +52,6 @@ def total_even_pairs(src)
         #element_index += 1
         #src[row_index][element_index] % 2 == 0
         total += src[i][0] + src[i][1]
-        i += 1
       end
     i += 1
   end
