@@ -47,7 +47,6 @@ def total_even_pairs(src)
   total = 0
   i = 0
   while i < src.count do
-      binding.pry
       if src[i][0] % 2 == 0 && src[i][1] % 2 == 0
         #element_index += 1
         #src[row_index][element_index] % 2 == 0
