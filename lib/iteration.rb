@@ -1,3 +1,5 @@
+require "pry"
+
 def join_ingredients(src)
   outer_results = []
   row_index = 0
