@@ -53,6 +53,8 @@ def total_even_pairs(src)
       else
         src [row_index][element_index] % 2 == 1
         row_index += 1
+      end
+      element_index += 1
     end
     row_index += 1
   end
