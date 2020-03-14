@@ -27,7 +27,7 @@ while row_index < src.count do
   outer_results << [row_index][0]
 end
 row_index += 1
-end
+
 outer_results
 
 
